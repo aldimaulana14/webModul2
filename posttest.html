@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Tambah Data Nilai Mata Kuliah</title>
+  </head>
+  <body>
+    <h2>Form Tambah Data Nilai Mata Kuliah</h2>
+    <form action="/submit-nilai" method="POST">
+      <label for="nama_matakuliah">Nama Mata Kuliah:</label><br />
+      <input type="text" id="nama_matakuliah" name="nama_matakuliah" required /><br /><br />
+
+      <label for="nama_dosen">Nama Dosen:</label><br />
+      <input type="text" id="nama_dosen" name="nama_dosen" required /><br /><br />
+
+      <label for="sks">SKS:</label><br />
+      <input type="number" id="sks" name="sks" min="1" required /><br /><br />
+
+      <label for="nama_mahasiswa">Nama Mahasiswa:</label><br />
+      <input type="text" id="nama_mahasiswa" name="nama_mahasiswa" required /><br /><br />
+
+      <label for="kehadiran">Jumlah Kehadiran:</label><br />
+      <input type="number" id="kehadiran" name="kehadiran" min="0" required /><br /><br />
+
+      <label for="nilai_tugas">Nilai Tugas:</label><br />
+      <input type="number" id="nilai_tugas" name="nilai_tugas" min="0" max="100" required /><br /><br />
+
+      <label for="nilai_quiz">Nilai Quiz:</label><br />
+      <input type="number" id="nilai_quiz" name="nilai_quiz" min="0" max="100" required /><br /><br />
+
+      <label for="nilai_uts">Nilai UTS:</label><br />
+      <input type="number" id="nilai_uts" name="nilai_uts" min="0" max="100" required /><br /><br />
+
+      <label for="nilai_uas">Nilai UAS:</label><br />
+      <input type="number" id="nilai_uas" name="nilai_uas" min="0" max="100" required /><br /><br />
+
+      <label for="nilai_akhir">Nilai Akhir:</label><br />
+      <input type="number" id="nilai_akhir" name="nilai_akhir" min="0" max="100" required /><br /><br />
+
+      <label for="nilai_huruf">Nilai Huruf:</label><br />
+      <input type="text" id="nilai_huruf" name="nilai_huruf" maxlength="2" required /><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

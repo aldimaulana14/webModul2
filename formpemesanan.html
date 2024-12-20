@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pemesanan</title>
+    <link rel="stylesheet" href="pemesanan.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Form Pemesanan</h1>
+      <form action="#">
+        <div class="input">
+          <label for="id-pemesan">Id Pemesan :</label>
+          <input type="number" required />
+        </div>
+        <div class="input">
+          <label for="nama">Nama Pemesan :</label>
+          <input type="text" size="80" required />
+        </div>
+        <div class="input">
+          <label for="no">No Identitas :</label>
+          <input type="number" required />
+        </div>
+        <div class="tipe-kamar">
+          <label for="kamar">Tipe Kamar :</label>
+          <select name="kamar" id="kamar">
+            <option value="-">--Pilih--</option>
+            <option value="standard">STANDARD</option>
+            <option value="deluxe">DELUXE</option>
+            <option value="family">FAMILY</option>
+          </select>
+        </div>
+        <div class="input">
+          <label for="harga">Harga :</label>
+          <input type="text" required />
+        </div>
+        <div class="input">
+          <label for="tanggal">Tanggal Pesan :</label>
+          <input type="date" required />
+        </div>
+        <div class="input-durasi">
+          <label for="durasi" style="margin-left: 10px">Durasi Menginap :</label>
+          <input type="number" required style="width: 100px; margin-left: 43px" /><label for="durasi" style="margin-left: 10px">Hari</label>
+        </div>
+        <div class="check">
+          <label for="breakfast">Termasuk Breakfast :</label>
+          <input type="checkbox" checked style="margin-left: 22px" /><label for="breakfast"> Ya</label>
+        </div>
+        <div class="input">
+          <label for="Total Bayar">Total Bayar :</label>
+          <input type="text" required />
+        </div>
+        <div class="tombol">
+          <button type="submit" style="background-color: rgb(41, 41, 253); color: white">Simpan</button>
+          <button style="background-color: rgb(216, 216, 42)">Batal</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="fasilitas.css" />
+  </head>
+  <body>
+    <div class="fasilitas">
+      <h2>Tambah Data Fasilitas</h2>
+      <form action="/submit_fasilitas" method="POST">
+        <div class="input">
+          <label for="id_fasilitas">ID Fasilitas:</label>
+          <input type="number" id="id_fasilitas" name="id_fasilitas" required />
+        </div>
+        <div class="input">
+          <label for="nama">Nama Fasilitas:</label>
+          <input type="text" id="nama" name="nama" required />
+        </div>
+        <div class="input">
+          <label for="harga_weekend">Harga Weekend:</label>
+          <input type="number" id="harga_weekend" name="harga_weekend" required />
+        </div>
+        <div class="input">
+          <label for="harga_weekday">Harga Weekday:</label>
+          <input type="number" id="harga_weekday" name="harga_weekday" required />
+        </div>
+        <div class="input">
+          <label for="kuota">Kuota:</label>
+          <input type="number" id="kuota" name="kuota" required />
+        </div>
+        <div class="input">
+          <label for="jam_buka">Jam Buka:</label>
+          <input type="time" id="jam_buka" name="jam_buka" required style="margin-right: 300px" />
+        </div>
+        <div class="input">
+          <label for="jam_tutup">Jam Tutup:</label>
+          <input type="time" id="jam_tutup" name="jam_tutup" required style="margin-right: 300px" />
+        </div>
+        <div class="tombol">
+          <button style="background-color: rgb(64, 64, 252); color: white">Tambah</button>
+          <button style="background-color: rgb(216, 216, 9)">Batal</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="tambah2.js"></script>
+  </body>
+</html>
